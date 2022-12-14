@@ -22,6 +22,7 @@ function draw() {
 
     movers[i].update();
     movers[i].display();
+    movers[i].checkEdges();
   }
 }
 
