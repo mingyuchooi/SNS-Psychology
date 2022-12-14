@@ -23,7 +23,7 @@ class Attractor {
     ellipseMode(CENTER);
     strokeWeight(4);
     stroke(0);
-      fill(101, 200);
+      fill(255);
     ellipse(this.position.x, this.position.y, this.mass * 2, this.mass * 2);
   }
 
