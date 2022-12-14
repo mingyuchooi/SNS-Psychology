@@ -22,7 +22,7 @@ class Mover {
   display() {
     stroke(0);
     strokeWeight(2);
-    fill(255, 175);
+    fill(0);
     ellipse(this.position.x, this.position.y, this.mass * 16, this.mass * 16);
   }
 
