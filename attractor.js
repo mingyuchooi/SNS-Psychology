@@ -23,13 +23,7 @@ class Attractor {
     ellipseMode(CENTER);
     strokeWeight(4);
     stroke(0);
-    if (this.dragging) {
-      fill(255);
-    } else if (this.rollover) {
-      fill(175);
-    } else {
       fill(101, 200);
-    }
     ellipse(this.position.x, this.position.y, this.mass * 2, this.mass * 2);
   }
 
