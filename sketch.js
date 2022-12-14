@@ -5,8 +5,8 @@ let attractor;
 
 function setup() {
   createCanvas(640, 360);
-  for (let i = 0; i < 10; i++) {
-    movers[i] = new Mover(random(0.1, 2), random(width), random(height));
+  for (let i = 0; i < 200; i++) {
+    movers[i] = new Mover(2, random(width), random(height));
   }
   attractor = new Attractor();
 }
