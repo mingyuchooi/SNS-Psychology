@@ -17,12 +17,11 @@ function draw() {
   attractor.display();
 
   for (let i = 0; i < movers.length; i++) {
-    if(mouseIsPressed){
     let force = attractor.calculateAttraction(movers[i]);
     movers[i].applyForce(force);
-
+if(mouseIsPressed){
     movers[i].update();
-    }
+}
     movers[i].display();
     movers[i].checkEdges();
   }
