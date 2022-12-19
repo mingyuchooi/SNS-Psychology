@@ -19,9 +19,9 @@ function draw() {
   for (let i = 0; i < movers.length; i++) {
     let force = attractor.calculateAttraction(movers[i]);
     movers[i].applyForce(force);
-//if(mouseIsPressed){
-  //  movers[i].update();
-//}
+if(mouseIsPressed){
+  movers[i].update();
+}
     movers[i].display();
     movers[i].checkEdges();
   }
@@ -29,9 +29,6 @@ function draw() {
 
 function mouseMoved() {
   attractor.handleHover(mouseX, mouseY);
-  if(mouseIsPressed){
-    movers[i].update();
-}
 }
 
 function mousePressed() {
